@@ -22,7 +22,7 @@ def FindDuplicate(path):
 
     exits = os.path.isdir(path)
 
-    dups ={}
+    dups ={} # Set data type
     if exits:
         for dirName,subdirs,fileList in os.walk(path):
             print("Current folder is:"+dirName)
