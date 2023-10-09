@@ -4,7 +4,7 @@ import shutil
 import logging
 
 
-def copy_files(source_directory,destination_directory):
+def copy_files_with_extension(source_directory,destination_directory,file_extension):
     try:
 
         if not os.pth.exists(source_directory):
@@ -18,7 +18,7 @@ def copy_files(source_directory,destination_directory):
             logging.info(f"Created destination directory: {destination_directory}")
         
         for filename in os.listdir(source_directory):
-          
+            if filename.endswith(file_extension):
                 source_file_path =os.path.join(source_directory,filename)
                 destination_file_path =os.path.join(destination_directory,filename)
 
@@ -37,16 +37,21 @@ def copy_files(source_directory,destination_directory):
 
 def main():
 
-    logging.basicConfig(filename='Loginfile1.log',level=logging.INFO,format='%(asctime)s - %(levelname)s : %(message)s')
+    logging.basicConfig(filename='Loginfile2.log',level=logging.INFO,format='%(asctime)s - %(levelname)s : %(message)s')
     
     try:
-        if len(sys.argv) !=3:
+        if len(sys.argv) !=4:
             raise ValueError("Usage : DirectoryCopyExt.py <source_directory> <destination_directory><file_extention>")
         
         source_directory =sys.argv[1]
         destination_directory =sys.argv[2]
+        file_extension =sys.argv[3]
+
+        if not file_extension.startswith("."):
+           raise ValueError("file extension should start with '.' ") 
+
+        copy_files_with_extension(source_directory, destination_directory, file_extension)
         
-        copy_files(source_directory, destination_directory)
 
     except ValueError as e:
         logging.error(f"Error: {e}")

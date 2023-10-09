@@ -37,7 +37,7 @@ def copy_files(source_directory,destination_directory):
 
 def main():
 
-    logging.basicConfig(filename='Loginfile1.log',level=logging.INFO,format='%(asctime)s - %(levelname)s : %(message)s')
+    logging.basicConfig(filename='Loginfile1.log',level=logging.INFO,format='%(asctime)s - %(levelname)s : %(message)s')\
     
     try:
         if len(sys.argv) !=3:

@@ -22,8 +22,10 @@ def is_connected():
   
 def MailSender(filename,time):
   try:
-    fromaddr = "ketan.hiray93@gmail.com"
+    fromaddr = "ketanpython7@gmail.com"
     toaddr = "ketanhiraypatil@gmail.com"
+    password = "blkphqgsbjmfqexf"
+    #Password: blkp hqgs bjmf qexf
     
     msg = MIMEMultipart()
     msg['From'] = fromaddr
@@ -50,7 +52,7 @@ def MailSender(filename,time):
 
     msg.attach(MIMEText(body,'pain'))
 
-    attachment = open(filename,"rb")
+    attachment = open(filename,"rb") #binary
 
     p = MIMEBase('application','octet-stream')
 
@@ -66,7 +68,7 @@ def MailSender(filename,time):
 
     s.starttls()
     
-    s.login(fromaddr,"--------")
+    s.login(fromaddr,password)
 
     text =msg.as_string()
 
@@ -88,9 +90,9 @@ def ProcessLog(log_dir ='Marvellous'):
     except:
       pass
 
-  separator ="-" * 80
+  separator ="-"*80
 
-  log_path = os.path.join(log_dir,"MarvellouLog%s.log" %(time.ctime()))
+  log_path = os.path.join(log_dir,"MarvellouLog%s.log"%(time.ctime()))
 
   f = open(log_path,'w')
   f.write(separator + "\n")
@@ -125,7 +127,10 @@ def ProcessLog(log_dir ='Marvellous'):
   else:
    print("There is no internat conncection")
 
+
+
 def main():
+
   print("---- Marvellous Infosytem by piyush kahirnar----")
 
   print("Application name:"+argv[0])
@@ -158,4 +163,4 @@ def main():
 
 if __name__ =="__main__":
    main()
-    
+
