@@ -1,0 +1,8 @@
+2023-10-12 12:48:58,589 - INFO - Calculating checksum of files in directory: demo 
+2023-10-12 12:48:58,590 - INFO - Checksum of 1_Hellox.py:e578a6d1fae6142b1223cfbbd461cb3f
+2023-10-12 12:48:58,590 - INFO - Checksum of 2_Sequance.py:fa86c53a7665473e5efbcf81caae4f79
+2023-10-12 12:48:58,591 - INFO - Checksum of 3_Selection1.py:252d9ad78d6a06daedea2438e0a58d79
+2023-10-12 12:48:58,591 - INFO - Checksum of 4_Old_Even_with_import.py:7def12b0ca7ab53a902f651cec509fa2
+2023-10-12 12:48:58,591 - INFO - Checksum of 4_Selection2_withfunction - Copy.py:23ea1fcbeaed81ab3c42da9a03182a74
+2023-10-12 12:48:58,591 - INFO - Checksum of 4_Selection2_withfunction.py:23ea1fcbeaed81ab3c42da9a03182a74
+2023-10-12 12:48:58,591 - INFO - Checksum calculation complated.
