@@ -1,0 +1,4 @@
+Deleted duplicate file: C:\Users\khiray\OneDrive\Documents\Python\My_Programs\Python_programs\Assignment_13\demo\1_Hellox.py
+Deleted duplicate file: C:\Users\khiray\OneDrive\Documents\Python\My_Programs\Python_programs\Assignment_13\demo\2_Sequance.py
+Deleted duplicate file: C:\Users\khiray\OneDrive\Documents\Python\My_Programs\Python_programs\Assignment_13\demo\4_Old_Even_with_import copy.py
+Deleted duplicate file: C:\Users\khiray\OneDrive\Documents\Python\My_Programs\Python_programs\Assignment_13\demo\4_Selection2_withfunction - Copy.py
